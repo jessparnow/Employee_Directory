@@ -1,3 +1,10 @@
+# Employee Directory
+
+## Description
+As an employer, I want a simple app to be able to view my employees and their roles easily. This app is a simple way to view all employees and information about them.
+# Link to Deployed Page 
+https://jessparnow.github.io/Employee_Directory/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
