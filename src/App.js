@@ -1,29 +1,29 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import EmployeeTable from "./components/EmployeeTable";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import friends from "./friends.json";
+import employees from "./employees.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.employees to the employees json array
   state = {
-    friends
+    employees
   };
 
   removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+    // Filter this.state.employees for employees with an id not equal to the id being removed
+    const employees = this.state.employees.filter(friend => friend.id !== id);
+    // Set this.state.employees equal to the new employees array
+    this.setState({ employees });
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.employees and render a table component for each friend object
   render() {
     return (
       <Wrapper>
-        <Title>Friends List</Title>s
-        {this.state.friends.map(friend => (
-          <FriendCard
+        <Title>Employees List</Title>
+        {this.state.employees.map(friend => (
+          <EmployeeTable
             removeFriend={this.removeFriend}
             id={friend.id}
             key={friend.id}
