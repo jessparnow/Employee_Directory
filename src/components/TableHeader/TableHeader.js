@@ -8,13 +8,14 @@ function TableHeader(props) {
         {/* {Object.keys(employees).map(key => (
               <th>{key}</th>
           ))} */}
-        <th scope="col">Id</th>
         <th scope="col">
-          <button id="sort-btn-bby">Name</button>
+          <button onClick={() => props.sortBy("id")}>Id</button>
         </th>
-        <th scope="col">Email</th>
+        <th scope="col">Name</th>
         <th scope="col">Occupation</th>
         <th scope="col">Location</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
       </tr>
     </thead>
   );

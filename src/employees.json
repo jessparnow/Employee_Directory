@@ -19,10 +19,97 @@
     "id": 3,
     "name": "Denise Miller",
     "occupation": "Intern",
-    "location": "???",
+    "location": "",
     "email": "denise.miller@example.com",
     "phone": "(338)-945-0127"
+  },
+  {
+    "id": 4,
+    "name": "Henry Wagner",
+    "occupation": "Sales Tm Member",
+    "location": "262 E North St",
+    "email": "henry.wagner@example.com",
+    "phone": "(096)-285-4122"
+  },
+  {
+    "id": 5,
+    "name": "Olivia Gomez",
+    "occupation": "Graphic Designer",
+    "location": "3589 Northaven Rd",
+    "email": "olivia.gomez@example.com",
+    "phone": "(656)-164-7190"
+  },
+  {
+    "id": 6,
+    "name": "Tracy Woods",
+    "occupation": "Secretary",
+    "location": "4829 Adams St",
+    "email": "tracy.woods@example.com",
+    "phone": "(151)-584-1843"
+  },
+  {
+    "id": 7,
+    "name": "Daisy Arnold",
+    "occupation": "Sales Manager",
+    "location": "5961 Edwards Rd",
+    "email": "daisy.arnold@example.com",
+    "phone": "(581)-999-6414"
+  },
+  {
+    "id": 8,
+    "name": "Julian Larson",
+    "occupation": "Marketing",
+    "location": "3994 Central St",
+    "email": "julian.larson@example.com",
+    "phone": "(649)-752-1643"
+  },
+  {
+    "id": 9,
+    "name": "Ray Cook",
+    "occupation": "Sales Team Member",
+    "location": "5366 E Center St",
+    "email": "ray.cook@example.com",
+    "phone": "(580)-719-7719"
+  },
+  {
+    "id": 10,
+    "name": "Lucille Ramos",
+    "occupation": "Sales Team Member",
+    "location": "1158 Mockingbird Hill",
+    "email": "lucille.ramos@example.com",
+    "phone": "(250)-368-5714"
+  },
+  {
+    "id": 11,
+    "name": "Angel Stephens",
+    "occupation": "Intern",
+    "location": "",
+    "email": "angel.stephens@example.com",
+    "phone": "(017)-763-1715"
+  },
+  {
+    "id": 12,
+    "name": "Rene Mitchelle",
+    "occupation": "Sales Team Member",
+    "location": "6143 Karen Dr",
+    "email": "rene.mitchelle@example.com",
+    "phone": "(400)-742-1055"
+  },
+  {
+    "id": 13,
+    "name": "Mattie Price",
+    "occupation": "Graphic Designer",
+    "location": "635 W Pecan St",
+    "email": "mattie.price@example.com",
+    "phone": "(074)-855-4295"
+  },
+  {
+    "id": 14,
+    "name": "Reginald Wright",
+    "occupation": "Human Resources",
+    "location": "3682 Avondale Ave",
+    "email": "reginald.wright@example.com",
+    "phone": "(217)-326-5279"
   }
- 
  
 ]
