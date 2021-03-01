@@ -16,9 +16,7 @@ class App extends Component {
         <Banner />
         <table className="table table-striped table-dark">
           <TableHeader
-            // employees = {employeeData[0]}
-            employees={this.state.employees}
-            sortBy={this.sortBy}
+          // employees = {employeeData[0]}
           />
 
           <tbody>
