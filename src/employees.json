@@ -1,87 +1,28 @@
 [
   {
     "id": 1,
-    "name": "SpongeBob",
-
-    "occupation": "Fry Cook",
-    "location": "A Pineapple Under the Sea",
-    "email": "spongebob@gmail.com"
+    "name": "Lucille Johnson",
+    "occupation": "Human Resources",
+    "location": "8063 Depaul Dr",
+    "email": "lucille.johnson@example.com",
+    "phone": "(391)-639-2623"
   },
   {
     "id": 2,
-    "name": "Mr. Krabs",
-    "occupation": "Restaurant Owner",
-    "location": "A Giant Anchor",
-    "email": "mkrabs@gmail.com"
+    "name": "Gordon Berry",
+    "occupation": "Personal Trainer",
+    "location": "9409 Valwood Pkwy",
+    "email": "gordon.berry@example.com",
+    "phone": "(898)-566-8935"
   },
   {
     "id": 3,
-    "name": "Squidward",
-    "occupation": "Cashier",
-    "location": "An Easter Island Head",
-    "email": "squidward@gmail.com"
-  },
-  {
-    "id": 4,
-    "name": "Dexter",
-    "occupation": "Boy Genius",
-    "location": "A Secret Laboratory",
-    "email": "morgan@gmail.com"
-  },
-  {
-    "id": 5,
-    "name": "Courage",
-    "occupation": "A Cowardly Dog",
-    "location": "Nowhere, Kansas",
-    "email": "afraid@gmail.com"
-  },
-  {
-    "id": 6,
-    "name": "Doug Funnie",
-    "occupation": "Student",
-    "location": "Bluffington",
-    "email": "mrfunny@gmail.com"
-  },
-  {
-    "id": 7,
-    "name": "Bugs Bunny",
-    "occupation": "Looney Toon",
-    "location": "A Rabbit Burrow",
-    "email": "bugsbunny@gmail.com"
-  },
-  {
-    "id": 8,
-    "name": "Johnny Bravo",
-    "occupation": "Ladies Man",
-    "location": "Aron City",
-    "email": "johnnyb@gmail.com"
-  },
-  {
-    "id": 9,
-    "name": "Tommy Pickles",
-    "occupation": "Adventurer",
-    "location": "California",
-    "email": "tpickles@gmail.com"
-  },
-  {
-    "id": 10,
-    "name": "Rocko",
-    "occupation": "Cashier",
-    "location": "O-Town, California",
-    "email": "rocko@gmail.com"
-  },
-  {
-    "id": 11,
-    "name": "Captain Planet",
-    "occupation": "Superhero",
-    "location": "Earth",
-    "email": "mrplanet@gmail.com"
-  },
-  {
-    "id": 12,
-    "name": "Ickis",
-    "occupation": "Ahhhh! A Real Monster!",
-    "location": "Under a City Dump",
-    "email": "ickis@gmail.com"
+    "name": "Denise Miller",
+    "occupation": "Intern",
+    "location": "???",
+    "email": "denise.miller@example.com",
+    "phone": "(338)-945-0127"
   }
+ 
+ 
 ]
