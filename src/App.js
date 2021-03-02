@@ -4,22 +4,24 @@ import employees from "./employees.json";
 import EmployeeTable from "./components/EmployeeTable/EmployeeTable";
 import TableHeader from "./components/TableHeader/TableHeader";
 import Banner from "./components/Banner/Banner";
-
+import Button from "./components/Button/Button";
+import IdButton from "./components/IdButton/IdButton";
 class App extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      sort: false,
+  state = {
       employees: employees
     }
-    this.sortBy = this.sortBy.bind(this)
-  }
+ 
 
-  sortBy(key) {
-    this.setState({
-      employees: employees.sort( (a, b) => a < b )
-    })
+  sortBy = () => {
+     let sortedEmployee = this.state.employees.sort((a, b) => (a.name > b.name) ? 1 : -1);
+     //target the name to sort
+     this.setState({sortedEmployee})
   }
+  sortById = () => {
+    let sortedEmployeeId = this.state.employees.sort((a, b) => (a.id > b.id) ? 1 : -1);
+    //target the name to sort
+    this.setState({sortedEmployeeId})
+ }
  
   //   handleToggle = () => {
   //     if (this.state.sorted) {
@@ -35,16 +37,23 @@ class App extends Component {
     return (
       <div>
         <Banner />
+
         <table className="table table-striped table-dark">
+          <thead>
+            
+          <IdButton 
+          sortById={this.sortById}/>
+          <Button
+          sortBy={this.sortBy} />
           <TableHeader
           // employees = {employeeData[0]}
           />
-       
+          
+       </thead>
           <tbody>
             {this.state.employees.map((employees) => (
               <EmployeeTable
                 employees={employees}
-                sortBy={this.sortBy}
                 // id={employees.id}
                 // key={employees.id}
                 // name={employees.name}
