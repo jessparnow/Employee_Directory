@@ -6,11 +6,32 @@ import TableHeader from "./components/TableHeader/TableHeader";
 import Banner from "./components/Banner/Banner";
 
 class App extends Component {
-  state = {
-    employees: employees,
-  };
+  constructor(props){
+    super(props)
+    this.state = {
+      sort: false,
+      employees: employees
+    }
+    this.sortBy = this.sortBy.bind(this)
+  }
+
+  sortBy(key) {
+    this.setState({
+      employees: employees.sort( (a, b) => a < b )
+    })
+  }
+ 
+  //   handleToggle = () => {
+  //     if (this.state.sorted) {
+  //       this.props.sort("asc")
+  //     } else {
+  //       this.props.sort("desc")
+  //     }
+  //     this.setState({sorted: !this.state.sorted})
+  // }
 
   render() {
+
     return (
       <div>
         <Banner />
@@ -18,11 +39,12 @@ class App extends Component {
           <TableHeader
           // employees = {employeeData[0]}
           />
-
+       
           <tbody>
             {this.state.employees.map((employees) => (
               <EmployeeTable
                 employees={employees}
+                sortBy={this.sortBy}
                 // id={employees.id}
                 // key={employees.id}
                 // name={employees.name}
