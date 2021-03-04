@@ -8,8 +8,9 @@ import Button from "./components/Button/Button";
 import IdButton from "./components/IdButton/IdButton";
 class App extends Component {
   state = {
-    employees: employees,
+    employees,
     search: "",
+    original: employees
   };
 
   sortBy = () => {
@@ -26,35 +27,21 @@ class App extends Component {
     //target the name to sort
     this.setState({ sortedEmployeeId });
   };
-  //  handleChange = (e) => {
-  //    let search = this.state.employees.filter(employees.name);
-  // this.setState({search})
-  //  };
-  // componentDidMount() {
-  //   this.searchEmployees = () => {
-  //     fetch(employees)
-  //       .then((res) => res.json())
-  //       .then((employees) => this.setState({ employees }));
-  //   };
-  // }
 
-  // handleInputChange = (event) => {
-  //   this.setState({ search: event.target.value });
-  // };
-
-  // handleFormSubmit = (event) => {
-  //   event.preventDefault();
-  //   const value = event.target.value;
-  //   const name = event.target.name;
-  //   this.setState({
-  //     [name]: value,
-  //   });
-  // };
-  // onChangeHandler(e){
-  //   this.setState({
-  //     input: e.target.value,
-  //   })
-  // }
+  handleInputChange = (e) => {
+    e.preventDefault();
+  const {value, name} = e.target;
+  console.log(name)
+    this.setState({
+      [name]: value,
+    });
+    console.log(employees)
+    let search = this.state.original.filter((employees) => {  
+      return employees.name.toLowerCase().includes(value.toLowerCase())
+    })
+    this.setState({ search });
+    console.log(search)
+  };
 
   render() {
     // const tBody = this.state.users
